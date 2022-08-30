@@ -9,7 +9,7 @@
     min-height: 100vh;
     width: 100%;
     position: relative;
-    background-image: linear-gradient(to right top, rgba(5, 201, 181, 0.7), rgba(110, 215, 199, 0.7), rgba(164, 229, 217, 0.7), rgba(211, 242, 236,0.7), rgba(255, 255, 255, 0.7)), url(img/banner.png);
+    background-image: linear-gradient(to right top, rgba(5, 201, 181, 0.7), rgba(110, 215, 199, 0.7), rgba(164, 229, 217, 0.7), rgba(211, 242, 236,0.7), rgba(255, 255, 255, 0.7)), url(img/banner.jpeg);
     background-position: center;
     background-size: cover;
 }
@@ -80,7 +80,7 @@ nav img{
     color:#05c9b5;
 }
 
-.nav .fa{
+nav .fa{
     display:none;
 }
 
@@ -106,7 +106,34 @@ nav img{
         font-size: 22px;
         cursor: pointer;
     }
-    nav .fa{
+    .nav-links ul{
         color: #fff
     }
+}
+
+/* course */
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px 
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.course p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
 }

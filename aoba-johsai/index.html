@@ -11,22 +11,41 @@
     <body>
         <section class="header">
             <nav>
-                <a href="index.html">Home</a>
                 <div class="nav-links" id="navLinks">
-                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <i class="fa-solid fa-xmark fa" onclick="hideMenu()"></i>
                     <ul>
+                        <li><a href="/">Home</a> </li>
                         <li><a href="">Team</a> </li>
                         <li><a href="">About</a> </li>
                         <li><a href="">Contact</a> </li>
                     </ul>
                 </div>
-                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                <i class="fa-solid fa-bars fa" onclick="showMenu()"></i>
             </nav>
             <div class="text-box">
                 <h1> AOBA <span>JOHSAI</span></h1>
                 <p>青葉 城西</p>
             </div>
         </section>    
+        <section class="course">
+            <h2>Courses We Offer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Post Graduation</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </section>
+
         <script>
             const navLinks = document.getElementById("navLinks");
             function showMenu(){
