@@ -213,3 +213,32 @@ h3{
     bottom: 49%;
     opacity: 1
 }
+
+/* facilities */
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align:center;
+    padding-top: 50px;
+}
+
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left
+}
+
+.facilities-col img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.facilities-col p, .facilties-col h3{
+    padding: 0;
+}
+
+.facilities-col h3{
+    margin-top: 16px;
+    text-align: left;
+}
