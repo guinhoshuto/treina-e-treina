@@ -109,6 +109,10 @@ nav .fa{
     .nav-links ul{
         color: #fff
     }
+
+    .row{
+        flex-direction: column;
+    }
 }
 
 /* course */
@@ -136,4 +140,76 @@ h2{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: rgba(5, 201, 181, 0.25); 
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15)
+}
+
+h3{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.campus{
+    width: 80%;
+    text-align: center;
+    margin: auto;    
+    padding-top: 50px
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img{
+    width: 100%;
+    display: block
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background:linear-gradient(to right bottom, rgba(5, 201, 181, 0.7), rgba(110, 215, 199, 0.7), rgba(164, 229, 217, 0.7), rgba(211, 242, 236,0.7), rgba(255, 255, 255, 0.7));
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    opacity: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1
 }
