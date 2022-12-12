@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    background-color: #000;
+}
+
+/* 
+CURVES
+exposure: +0.1
+contrast: -15
+highlights: -100
+shadows: 100
+whites -100
+blacks: +100
+
+B&W
+Temp: -4
+Tint: +20
+Vibrance: +3
+Saturation: +25
+
+SHADOWS
+Hue 215
+Sat 18
+
+HIGHLIGHTS
+Hue 280
+Sat 20
+
+COLOR MIX
+Hue 5
+Saturation 7
+Luminance 20
+
+ */
+
+#filter{
+    filter: hue-rotate(210deg)
+}
