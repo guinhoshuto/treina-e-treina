@@ -3,6 +3,17 @@ body{
     background-color: #000;
 }
 
+h1, h2{
+    color: #FFF;
+    font-family: sans-serif
+}
+
+.demo{
+    display:flex;
+    justify-content: center;
+    gap: 8px
+}
+
 /* 
 CURVES
 exposure: +0.1
@@ -33,6 +44,6 @@ Luminance 20
 
  */
 
-#filter{
+/* #filter{
     filter: hue-rotate(210deg)
-}
+} */

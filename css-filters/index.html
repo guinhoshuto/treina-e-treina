@@ -8,13 +8,29 @@
     <title>FITRINHOS</title>
 </head>
 <body>
-    <div>
-        <h2>Normal</h2>
-        <img src="https://images.pexels.com/photos/11719056/pexels-photo-11719056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <h1>HUE FILTER</h1>
+    <div class="demo">
+        <div>
+            <img src="https://images.pexels.com/photos/11719056/pexels-photo-11719056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h2>original</h2>
+        </div>
+        <div>
+            <img id="filter" src="https://images.pexels.com/photos/11719056/pexels-photo-11719056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h2 id="property"></h2>
+        </div>
     </div>
-    <div>
-        <h2>Filtro</h2>
-        <img id="filter" src="https://images.pexels.com/photos/11719056/pexels-photo-11719056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-    </div>
+    <script>
+        const img = document.getElementById('filter');
+        const property = document.getElementById('property')
+        let n = 0;
+        setInterval(() => {
+            n++
+            img.style.setProperty('filter', `hue-rotate(${n}deg)`)
+            property.innerHTML = `filter: hue-rotate(${n}deg)`
+            if(n >= 360) n = 0
+
+            console.log(n)
+        }, 50);
+    </script>
 </body>
 </html>
