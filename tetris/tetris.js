@@ -16,8 +16,24 @@ function draw(){
     drawMatrix(player.matrix, player.pos)
 }
 
-function update(){
+function playerDrop(){
+    player.pos.y++;
+    dropCounter = 0;
+}
+
+let dropCounter = 0;
+let dropInterval = 1000;
+
+let lastTime = 0;
+function update(time=0){
+    const deltaTime = time - lastTime;
+    lastTime = time;
+
+    dropCounter = deltaTime;
+    if(dropCounter > dropInterval) playerDrop()
+
     draw();    
+    if(time < dropInterval) requestAnimationFrame(update)
     requestAnimationFrame(update)
 }
 
@@ -44,5 +60,13 @@ const player = {
     },
     matrix: matrix
 }
+
+document.addEventListener('keydown', event => {
+    console.log(event)
+    if(event.code === 'ArrowRight') player.pos.x++;
+    if(event.code === 'ArrowLeft') player.pos.x--;
+    if(event.code === 'ArrowDown') playerDrop()
+})
+
 
 update()
