@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.primary {
+    --bg-default: #8257E5;
+}
+
+body * {
+    background-color: var(--bg-default);
+    color: white;
+    border: 0;
+    padding: 12px 24px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+}
