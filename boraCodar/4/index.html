@@ -13,58 +13,80 @@
 </head>
 <body>
     <div id="app">
-        <div class="wrapper">
-            <div id="top">
-                <div id="user-info">
-                    <img src="src/hakase.webp" height="50px" alt="hakase">
-                    <div id="user-status">
-                        <strong>Hakase</strong>
-                        <div class="status"">
-                            online
-                        </div>
-                    </div>
-                </div>
-                <div id="close-chat">
-                    <i class="ph-x-fill"></i>
-                </div>
-            </div>
-            <div id="messages">
-                <div id="last-seen">Hoje 11:30</div>
-                <div class="messages">
-                    <div class="message you">
-                        <div class="message-send">Hakase - 11:30</div>
-                        <div class="message-body">
-                            NANO NANO NANO NANO NANO
-                        </div>
-                    </div>
-                </div>
-                <div class="messages">
-                    <div class="message you">
-                        <div class="message-send">Hakase - 11:30</div>
-                        <div class="message-body">
-                            NANO NANO NANO NANO NANO
-                        </div>
-                    </div>
-                </div>
-                <div class="messages">
-                    <div class="message">
-                        <div class="message-send">Hakase - 11:30</div>
-                        <div class="message-body">
-                            HAKASE HAKASE HAKASE HAKASE HAKASE HAKASE
-                        </div>
-                    </div>
-                </div>
-                <div class="messages">
-                    <div class="message you">
-                        <div class="message-send">Hakase - 11:30</div>
-                        <div class="message-body">
-                            NANO NANO NANO NANO NANO
-                        </div>
+        <div id="top">
+            <div id="user-info">
+                <img src="src/hakase.webp" height="50px" alt="hakase">
+                <div id="user-status">
+                    <strong>Hakase</strong>
+                    <div class="status"">
+                        online
                     </div>
                 </div>
             </div>
-            <div id="bottom"></div>
+            <div id="close-chat">
+                <i class="ph-x-fill"></i>
+            </div>
+        </div>
+        <div id="messages">
+            <div id="last-seen">Hoje 11:30</div>
+            <div class="messages">
+                <div class="message">
+                    <div class="message-send">Hakase - 11:30</div>
+                    <div class="message-body">
+                        NANO NANO NANO NANO NANO
+                    </div>
+                </div>
+            </div>
+            <div class="messages">
+                <div class="message ">
+                    <div class="message-send">Hakase - 11:30</div>
+                    <div class="message-body">
+                        NANO NANO NANO NANO NANO
+                        NANO NANO NANO NANO NANO
+                        NANO NANO NANO NANO NANO
+                        NANO NANO NANO NANO NANO
+                        NANO NANO NANO NANO NANO
+                    </div>
+                </div>
+            </div>
+            <div class="messages">
+                <div class="message you">
+                    <div class="message-send">You - 11:30</div>
+                    <div class="message-body">
+                        HAKASE HAKASE HAKASE HAKASE HAKASE HAKASE
+                    </div>
+                </div>
+            </div>
+            <div class="messages">
+                <div class="message ">
+                    <div class="message-send">Hakase - 11:30</div>
+                    <div class="message-body">
+                        NANO NANO NANO NANO NANO
+                    </div>
+                </div>
+            </div>
+            <div class="messages">
+                <div class="message you">
+                    <div class="message-send">You - 11:30</div>
+                    <div class="message-body">
+                        HAKASE HAKASE HAKASE HAKASE HAKASE HAKASE
+                        HAKASE HAKASE HAKASE HAKASE HAKASE HAKASE
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <form>
+                <div class="input-wrapper">
+                    <input type="text">
+                    <button type="submit"><i class="ph-paper-plane-right-fill"></i></button>
+                </div>
+            </form>
         </div>
     </div>
+    <script>
+        const messages = document.querySelector(".messages")
+        messages.lastElementChild.scrollIntoView()
+    </script>
 </body>
 </html>
