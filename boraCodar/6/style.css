@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%
+    }
+
+body {
+    font-size: 1.6rem;
+    font-family: "Rubik", sans-serif;
+    background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%) no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1, strong{
+    font-weight: 500;
+}
+
+strong{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+h1{
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+#boarding-pass {
+    max-width: 32.7rem;
+    margin: auto;
+}
+
+#ticket {
+    margin-top: 2rem;
+}
+
+section{ 
+    background-color: #FFF;
+    padding: 2.4rem 3.2rem;
+    --mask: radial-gradient(1.5rem at 15px bottom, transparent 100%, black) -15px;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
+.departure, .arrival{
+    width: 12.5rem
+}
+
+.departure strong, .arrival strong{
+    font-size: 40px;
+    line-height: 47px;
+}
+
+bottom > p{
+    color: rgba(0,0,0,.8)
+}
+
+.top{
+    border-radius: 2.4rem 2.4rem 0 0;
+    gap: 2.4rem;
+    --mask: radial-gradient(1.5rem at 15px bottom, transparent 100%, black) -15px;
+}
+
+.bottom{
+    border-radius: 0 0 2.4rem 2.4rem;
+    --mask: radial-gradient(1.5rem at 1.5rem top, transparent 100%, black) -1.5rem;
+}
+
+.bottom > p {
+    text-align: center;
+    margin-top: 2.4rem;
+}
+
+dt time{
+   font-weight: 500; 
+   color: white;
+   background-color: #633BBC;
+   margin-top: .2rem;
+   display: inline-block;
+   border-radius: .8rem;
+   padding: .4rem .8rem;
+}
+
+.grid{
+    display: grid;
+}
+
+.column{
+    grid-auto-flow: column;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.middle{
+    border: 1px dashed rgba(0, 0, 0, .8);
+    --mask: radial-gradient(1.5rem at 1.5rem 1.5rem, transparent 100%, black) -1.5rem -1.5rem;
+}
+
+.bottom .container {
+    align-items: center;
+    gap: .8rem;
+}
+
+dl.grid{
+    gap: 1.6rem
+}
+.qrcode {
+    padding: 0 1.2rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.qrcode img{
+    width: 100%;
+}
+
+footer{
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    opacity: 0.64;
+    width: 27rem;
+    text-align: center;
+    width: 100%;
+    margin-top: 2.4rem;
+}
