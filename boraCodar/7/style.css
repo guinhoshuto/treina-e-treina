@@ -22,10 +22,15 @@ header{
     display: grid;
     place-content: center;
     background-color: #f8f8ff;
-    text-align: center;
     position: relative;
     min-height: 53.2rem;
     overflow: hidden;
+}
+
+header .top{
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 header::before{
@@ -64,6 +69,7 @@ h1{
     font-size: 4.8rem;
     line-height: 125%;
     max-width: 64.7rem;
+    margin: auto;
 }
 
 h2 {
@@ -83,6 +89,30 @@ form{
     padding: 4rem;
     border: 0.1rem solid #EAEAEA;
     border-radius: 1rem;
+    z-index: 2;
+    background-color: #EAEAEA;
+}
+
+input, select, button {
+    all: unset;
+}
+
+input{
+    text-align: left;
+}
+
+.search-field {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    background-color: #f4f4ff;
+    border-radius: 5px;
+    padding: 1.2rem 0.8rem 1.2rem 1.4rem;
+}
+
+.search-field i{
+    color: #E45858;
+    font-size: 2.4rem;
 }
 
 form button{
@@ -91,6 +121,10 @@ form button{
     border: 0;
     border-radius: 0.8rem;
     color: #FFF;
+}
+
+button:hover{
+    filter: brightness(1.1);
 }
 
 .sr-only{
@@ -103,4 +137,37 @@ form button{
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+}
+
+main .content {
+    max-width: 121.6rem;
+    margin: 10rem auto;
+}
+
+section.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.view{
+    display: flex;
+}
+
+.primary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple);
+    color: #FFF;
+    padding: 1.2rem 3.2rem;
+    border-radius: 0.4rem;
+}
+
+.secondary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--purple);
+    padding: 1.2rem 3.2rem;
+    border-radius: 0.4rem;
 }
