@@ -147,6 +147,7 @@ main .content {
 section.top{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .view{
@@ -170,4 +171,53 @@ section.top{
     color: var(--purple);
     padding: 1.2rem 3.2rem;
     border-radius: 0.4rem;
+}
+
+.top h2 {
+    color: #121214;
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+.cards{
+    margin-top: 2.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem
+}
+
+section.card{
+    margin-top: 4rem;
+}
+
+.card{
+    padding: 0.8rem;
+    border: 1px solid #D4D4D4;
+    border-radius: 0.8rem;
+    max-width: 38.4rem;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    margin: 2rem 0;
+}
+
+.card .location {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem
+}
+
+.card .location i {
+    color: #E45858;
+    font-size: 2.4rem;
 }
