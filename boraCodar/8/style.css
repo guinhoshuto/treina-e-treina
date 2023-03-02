@@ -29,7 +29,7 @@ body {
 
 #app {
     background: #292738;
-    justify-content: center;
+    place-content: center;
     grid-template-columns: 29.6rem max-content max-content;
     grid-template-rows: max-content;
     column-gap: 3.2rem;
@@ -38,7 +38,6 @@ body {
     width: fit-content;
     min-height: 100vh;
     height: fit-content;
-    padding: 11.2rem 12.3rem;
 }
 
 .box:nth-child(4) {
