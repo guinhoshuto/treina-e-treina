@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.grid {
+    display: grid;
+}
+
+.box{
+    color: #FFF;
+    padding: 2.9rem 4.8rem;
+    background: #363447; 
+    box-shadow: 0.3rem 0.4rem 2.6rem rgba(0, 0, 0, 0.25);
+    border-radius: 1.6rem;
+}
+
+#app {
+    background: #292738;
+    justify-content: center;
+    grid-template-columns: 29.6rem max-content max-content;
+    grid-template-rows: max-content;
+    column-gap: 3.2rem;
+    row-gap: 5.9rem;
+    min-width: 100vw;
+    width: fit-content;
+    min-height: 100vh;
+    height: fit-content;
+    padding: 11.2rem 12.3rem;
+}
+
+.box:nth-child(4) {
+    grid-column: 1/4;
+}
+
+.top{
+    font-weight: 500;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: auto;
+}
+
+.bottom .item{
+    display: flex;
+    gap: 1rem;
+}
+
+.nps {
+    font-weight: 500;
+    gap: 3.2rem;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.nps .middle {
+    min-height: 19.7rem;
+    place-content: center;
+    justify-items: center;
+    gap:1.6rem;
+    color: #81FBB8;
+}
+
+.nps .bottom{
+    font-weight: 400;
+    font-size: 14px;
+    gap: 1rem;
+}
