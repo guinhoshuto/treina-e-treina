@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%
+    }
+
+body {
+    font-size: 1.6rem;
+    background: #2A2D34;
+}
+
+main{
+    padding: 8rem;
+    display: grid;
+    color: #FFF;
+    gap: 3rem
+}
+
+h2{ 
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+span {
+    font-size: 5rem;
+    display: inline-block;
+}
+
+#bg-l-r span{
+    padding: 0 1.5rem;  
+    background: linear-gradient(0deg, #BAA5FF, #BAA5FF) no-repeat right bottom; 
+    background-size: 100% 100%;
+    animation: lr 1s ease-out;
+    background-position-x: left ;
+}
+
+@keyframes lr {
+   0%{
+        background-size: 0% 100%;
+   } 
+
+    /* 100% {
+        background-size: 4% 100%;
+    }  */
+}
