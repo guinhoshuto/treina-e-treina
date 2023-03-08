@@ -219,11 +219,20 @@ svg circle:nth-child(2){
     display: grid;
     justify-items: center;
     gap: .5rem; 
+    margin-top: auto;
 }
 
 .bar{
+    --height: 3rem;
     width: 1.5rem;
+    height: var(--height);
     background: linear-gradient(180deg, #90F7EC 0%, #32CCBC 100%);
     border-radius: 999px;
-    height: 3rem;
+    animation: bar 1s ease-in;
+}
+
+@keyframes bar {
+    0% {
+        height: 0;
+    }
 }
