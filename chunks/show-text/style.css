@@ -33,6 +33,25 @@ span {
     font-weight: 700;
 }
 
+#text-up{
+    height: 12rem;
+    overflow: hidden;
+}
+
+#text-up span{
+    display: inline-block;
+    animation: appear 2s ease-out infinite;
+}
+
+@keyframes appear {
+   from{ 
+        margin-top: 7rem
+   } 
+   to {
+     margin-top: 0;
+   }
+}
+
 #bg-l-r span{
     padding: 0 1.5rem;  
     background: linear-gradient(0deg, #BAA5FF, #BAA5FF) no-repeat right bottom; 
