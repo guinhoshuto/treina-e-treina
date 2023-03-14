@@ -45,10 +45,12 @@ span {
 
 @keyframes appear {
    from{ 
-        margin-top: 7rem
+     margin-top: 7rem;
+    color: #2A2D34;
    } 
    to {
      margin-top: 0;
+    color: #2A2D34;
    }
 }
 
@@ -76,3 +78,47 @@ span {
         border-bottom: 0.4rem solid #FFF;
     }  */
 }
+
+#both div{
+    background: linear-gradient(0deg, #BAA5FF, #BAA5FF) no-repeat right bottom; 
+    background-size: 100% 100%;
+    background-position-x: left ;
+    animation: lr2 1s ease-out;
+    width: fit-content;    
+    overflow: hidden;
+    height: 7rem;
+}
+
+
+#both div span {
+    padding: 0 1.5rem;  
+    color: #2A2D34;
+    animation: appear 1s ease-out;
+    animation-delay: 1s;
+}
+
+@keyframes lr2 {
+   0%{
+        background-size: 0% 100%;
+        color:transparent;
+        /* border-bottom: 0.4rem solid #FFF; */
+   } 
+
+    100% {
+        background-size: 100% 100%;
+        color: transparent;
+    } 
+}
+
+/* @keyframes both {
+    0%{
+        background-size: 0% 100%;
+    }    
+    100% {
+        background-size: 100% 100%;
+    }
+    100%{
+        background-size: 100% 100%;
+        margin: 0;
+    }
+} */
