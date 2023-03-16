@@ -1,0 +1,40 @@
+body{
+    font-family: 'Dela Gothic One', cursive; 
+    background-color: #FCE965;
+    display: grid;
+    place-content: center;
+}
+
+#auto-pressed{
+    border: 4px solid black;
+    font-family: 'Dela Gothic One', cursive; 
+    font-size: 64px;
+    padding: 10px;
+    animation: press .2s ease-in-out infinite;
+    box-shadow: 0;
+}
+
+@keyframes press {
+   from{
+    /* transform: translateX(-10px);
+    transform: translateY(-10px); */
+    transform: translate(-10px);
+    box-shadow: 
+        10px 10px 0 black, 
+        9px 9px 0 black,
+        8px 8px 0 black,
+        7px 7px 0 black,
+        6px 6px 0 black,
+        5px 5px 0 black,
+        4px 4px 0 black,
+        3px 3px 0 black,
+        2px 2px 0 black,
+        1px 1px 0 black;
+   } 
+   to{
+    transform: translate(0px);
+    /* transform: translateY(0px);
+    transform: translateX(0px); */
+    box-shadow: 0;
+   }
+}
