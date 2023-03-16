@@ -12,4 +12,46 @@
 
 body {
     font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+}
+
+main{
+    background: url('./assets/bg.png') no-repeat center/cover;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+section{
+    background: #6d67d0;
+    backdrop-filter: blur(1rem);
+    border-radius: 1rem;
+}
+
+.temperature-now{
+    background: url('./assets/temp-bg.png');
+    width: 48rem;
+    height: 48rem;
+    display: grid;
+    position: relative;
+    grid-template-rows: max-content 1fr max-content;
+}
+
+.temperature-now::before{
+    content: '';
+    width: 17.6rem;
+    height: 17.6rem;
+    background: url('./assets/weather.png') no-repeat;
+    display: block;
+    position: absolute;
+    top: -5.6rem;
+    left: -5.6rem;
+}
+
+.location{
+    justify-self: end;
+    color: aliceblue;
+    padding: 3.2rem 3.2rem 0;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
 }
