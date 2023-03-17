@@ -1,0 +1,57 @@
+body{
+    background: #f7ebdd;
+    font-family: sans-serif;
+    padding: 4.8rem;
+}
+
+main{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.prompt{
+    width: fit-content;
+    font-size: 2.4rem;
+    border: 2px solid #1b1616;
+    border-radius: 999px;
+    padding: .3rem 1.2rem;
+    transform-origin: bottom left;
+    animation: appear .5s ease-in-out both;
+}
+
+.pink{
+    background: linear-gradient(270deg, #ec4e83, transparent);
+    animation-delay: 1s;
+}
+
+.purple{
+    background: linear-gradient(270deg, #c176ce, transparent);
+    animation-delay: 4s;    
+}
+
+.blue{
+    background: linear-gradient(270deg, #61b7da, transparent);
+    animation-delay: 2s;
+}
+
+.yellow{
+    background: linear-gradient(270deg, #f7dd0e, transparent)
+}
+
+.beige{
+    background: linear-gradient(270deg, #ded4cb, transparent);
+    animation-delay: 3s;    
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: scale(.1);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
