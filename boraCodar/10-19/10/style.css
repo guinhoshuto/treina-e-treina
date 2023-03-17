@@ -13,6 +13,7 @@
 body {
     font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
+    background: #6d67d0;
 }
 
 main{
@@ -54,4 +55,35 @@ section{
     padding: 3.2rem 3.2rem 0;
     font-size: 1.4rem;
     line-height: 1.7rem;
+}
+
+.temp{
+    margin: 6rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.temp .number{
+    text-align: center;
+    font-size: 8.8rem;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.temp .number .maxmin{
+    font-size: 2rem;
+}
+
+.temp .number .maxmin span{
+    opacity: .5;
+}
+.celsius{
+    font-size: 2.4rem;
+    color: white;
+    opacity: .6;
+    margin-top: 1.5rem;
 }
