@@ -87,3 +87,35 @@ section{
     opacity: .6;
     margin-top: 1.5rem;
 }
+
+.statistics{
+    padding: 1.2rem;
+    display: flex;
+    gap: 0.8rem;
+    color: #FFF;
+}
+
+.stats{
+    flex:1;
+    padding: 1.2rem 1.6rem;
+    background: rgba(102, 96,200,0.6);
+    border-radius: .6rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.stats .info{
+    color: #e7e6fb
+}
+
+.stats h5 span,
+.stats .info p {
+    font-size: 1.2rem;
+}
+
+h5{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: baseline;
+}
