@@ -5,7 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
     <title>#boraCodar 11</title>
   </head>
-  <body></body>
+  <body>
+    <div id="page" class="flex">
+      <header>
+        <i class="ph ph-flower-lotus"></i> 
+      </header>
+      <main>
+        <div class="headline">
+          <h1>Acesse a plataforma</h1>
+          <p>
+            Faça login ou registre-se para começar a construir seus projetos ainda hoje.
+          </p>
+        </div>
+        <form action="">
+          <div class="input-wrapper">
+            <label for="email">E-mail</label>
+            <input type="email" required id="email" name="email">
+          </div>
+          <div class="input-wrapper">
+            <div class="label-wrapper">
+              <label for="password">Senha</label>
+              <a href="#">Esqueceu a senha?</a>
+            </div>
+            <input type="password" required id="password" name="password">
+            <i class="ph-light ph-eye"></i>
+            <i class="ph-light ph-eye-slash"></i>
+          </div>
+          <button type="submit">ENTRAR</button>
+          <div class="create-account">
+            Ainda não tem uma conta? <a href="">Inscreva-se</a>
+          </div>
+        </form>
+      </main>
+      <img src="./assets/bg.jpg" alt="">
+    </div>
+  </body>
 </html>
