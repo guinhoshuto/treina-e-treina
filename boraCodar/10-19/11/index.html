@@ -11,37 +11,53 @@
   </head>
   <body>
     <div id="page" class="flex">
-      <header>
-        <i class="ph ph-flower-lotus"></i> 
-      </header>
-      <main>
-        <div class="headline">
-          <h1>Acesse a plataforma</h1>
-          <p>
-            Faça login ou registre-se para começar a construir seus projetos ainda hoje.
-          </p>
-        </div>
-        <form action="">
-          <div class="input-wrapper">
-            <label for="email">E-mail</label>
-            <input type="email" required id="email" name="email">
+      <div>
+        <header>
+          <i class="ph ph-flower-lotus"></i>
+        </header>
+        <main>
+          <div class="headline">
+            <h1>Acesse a plataforma</h1>
+            <p>
+              Faça login ou registre-se para começar a construir seus projetos
+              ainda hoje.
+            </p>
           </div>
-          <div class="input-wrapper">
-            <div class="label-wrapper">
-              <label for="password">Senha</label>
-              <a href="#">Esqueceu a senha?</a>
+          <form action="">
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <input type="email" required id="email" name="email" />
             </div>
-            <input type="password" required id="password" name="password">
-            <i class="ph-light ph-eye"></i>
-            <i class="ph-light ph-eye-slash"></i>
-          </div>
-          <button type="submit">ENTRAR</button>
-          <div class="create-account">
-            Ainda não tem uma conta? <a href="">Inscreva-se</a>
-          </div>
-        </form>
-      </main>
-      <img src="./assets/bg.jpg" alt="">
+            <div class="input-wrapper">
+              <div class="label-wrapper">
+                <label for="password">Senha</label>
+                <a href="#">Esqueceu a senha?</a>
+              </div>
+              <input type="password" required id="password" name="password" />
+              <i onclick="toggle()" class="ph-light ph-eye eye hide"></i>
+              <i onclick="toggle()" class="ph-light ph-eye-slash eye"></i>
+            </div>
+            <button type="submit">ENTRAR</button>
+            <div class="create-account">
+              Ainda não tem uma conta? <a href="">Inscreva-se</a>
+            </div>
+          </form>
+        </main>
+      </div>
+      <img src="./assets/bg.jpg" alt="" />
     </div>
+    <script>
+      function toggle() {
+        document
+          .querySelectorAll(".eye")
+          .forEach((e) => e.classList.toggle("hide"));
+
+        if (password.getAttribute("type") === "password") {
+          password.setAttribute("type", "text");
+        } else {
+          password.setAttribute("type", "password");
+        }
+      }
+    </script>
   </body>
 </html>
