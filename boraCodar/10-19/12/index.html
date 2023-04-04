@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+rel="stylesheet"
+type="text/css"
+href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css"
+/>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>#boraCodar 12</title>
@@ -13,12 +22,126 @@
         <nav>
             <div class="logo"><i class="ph ph-exclude"></i></div>
             <ul>
-                <li>item</li>
+                <li>
+                    <a href="#" class="active">
+                        <i class="ph ph-table"></i>
+                        Boards
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="">
+                        <i class="ph ph-users"></i>
+                        Equipes
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="">
+                        <i class="ph ph-chart-line"></i>
+                        Relatórios
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="">
+                        <i class="ph ph-sliders-horizontal"></i>
+                        Configurações
+                    </a>
+                </li>
             </ul>
         </nav>
         <main>
             <div class="inner">
+                <section class="title-avatar">
+                    <h1>Meu Kanban <i class="ph ph-note-pencil"></i></h1>
+                    <img src="https://github.com/guinhoshuto.png" class="avatar" alt="">
+                </section>
+                <section class="filter">
+                    <button><i class="ph ph-funnel-simple"></i> Filtrar</button>
+                    <div class="input-wrapper">
+                        <i class="ph ph-magnifying-glass"></i>
+                        <input type="text" placeholder="Buscar">
+                    </div>
+                </section>
+                <section class="kanban">
+                    <div class="todo">
+                        <h2>A fazer</h2>
+                        <div class="cards">
+                            <div class="card">
+                                <h3>Task 1</h3>
+                                <p>aaaa aaaa aaaaaaa aaaaaa aaaaaaaaa aaa</p>
+                                <div class="tags">
+                                    <span>abc</span>
+                                    <span>def</span>
+                                    <span>ghi</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3>Task 1</h3>
+                                <p>aaaa aaaa aaaaaaa aaaaaa aaaaaaaaa aaa</p>
+                                <div class="tags">
+                                    <span>abc</span>
+                                    <span>def</span>
+                                    <span>ghi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doing">
+                        <h2>Fazendo</h2>
+                        <div class="cards">
+                            <div class="card">
+                                <h3>Task 1</h3>
+                                <p>aaaa aaaa aaaaaaa aaaaaa aaaaaaaaa aaa</p>
+                                <div class="tags">
+                                    <span>abc</span>
+                                    <span>def</span>
+                                    <span>ghi</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3>Task 1</h3>
+                                <p>aaaa aaaa aaaaaaa aaaaaa aaaaaaaaa aaa</p>
+                                <div class="tags">
+                                    <span>abc</span>
+                                    <span>def</span>
+                                    <span>ghi</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3>Task 1</h3>
+                                <p>aaaa aaaa aaaaaaa aaaaaa aaaaaaaaa aaa</p>
+                                <div class="tags">
+                                    <span>abc</span>
+                                    <span>def</span>
+                                    <span>ghi</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3>Task 1</h3>
+                                <p>aaaa aaaa aaaaaaa aaaaaa aaaaaaaaa aaa</p>
+                                <div class="tags">
+                                    <span>abc</span>
+                                    <span>def</span>
+                                    <span>ghi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="done">
+                        <h2>Feito</h2>
+                        <div class="cards">
 
+                            <div class="card">
+                                <h3>Task 1</h3>
+                                <p>aaaa aaaa aaaaaaa aaaaaa aaaaaaaaa aaa</p>
+                                <div class="tags">
+                                    <span>abc</span>
+                                    <span>def</span>
+                                    <span>ghi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </main>
     </div>
