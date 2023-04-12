@@ -90,3 +90,63 @@ input{
 input:focus{
     outline: .15rem solid #9333EA;
 }
+
+.col-2{
+    gap: 2.4rem;
+    align-items: center;
+}
+
+.col-2.input-wrapper:nth-child(1){
+    flex-basis: 80%;
+}
+
+.ph-shield-check{
+    color: green;
+}
+
+.info-security{
+    margin-top: 4.8rem;
+    justify-content: center;
+    gap: .8rem;
+    font-size: 1.4rem;
+    color: #E5E7EB
+}
+
+.ph-warning-circle{
+    color: red;
+}
+
+input:invalid:focus{
+    border: 0.15rem solid #FB7185
+}
+
+input + .warning{
+    display: none;
+}
+
+input:invalid:focus + warning{
+    font-size: 1.4rem;
+    margin-top: .8rem;
+    color: #FB7185;
+    display: flex;
+    gap: .4rem
+}
+
+button{
+    margin-top: 10rem;
+    border: 0;
+    padding: 1.6rem;
+    width: 100%;
+    background-color: #9333EA;
+    color: #E5E7EB;
+    box-shadow: .0rem .4rem 1.6rem rgba(0,0,0.1);
+    border-radius: .4rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+button:hover{
+    background-color: #A855F7;
+}
