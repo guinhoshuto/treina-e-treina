@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%
+    }
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    line-height: 130%;
+    background: #FBFAFF;
+}
+
+#app{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.drag-files{
+    background: #F3F0FF;
+    border: 1px dashed #1CB2FA;
+    border-radius: 8px;
+    width: 44rem;
+
+    text-align: center;
+    padding: 2.8rem 0 3.2rem;
+    position: relative;
+}
+
+.drag-files input{
+    all:unset;
+    opacity: 0;
+    inset: 0;
+    position: absolute;
+}
+
+.drag-files i{
+    font-size: 4.8rem;
+    color: #7C3AED;
+}
+
+.drag-files h3{
+    margin-top: 1.2rem;
+    color: #7C3AED;
+    font-size: 1.6rem;
+}
+
+.drag-files.dragover{
+   background: #EBE6FF; 
+}
+
+.files{
+    margin-top: 2rem;
+    display: grid;
+    gap: 1.6rem;
+}
+
+.box{
+    padding: .8rem;
+    width: 44rem;
+    background: white;
+    box-shadow: 0 .4rem 1.6rem #EAE2FD;
+    border-radius: .8rem;
+}

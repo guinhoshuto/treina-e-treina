@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>#boraCodar 14</title>
+  </head>
+  <body>
+    <div id="app">
+      <section class="drag-files">
+        <i class="ph ph-cloud-arrow-up"></i>
+        <h3>Importe seus arquivos</h3>
+        <p>Arraste ou clique para fazer upload</p>
+        <input type="file" />
+      </section>
+      <section class="files">
+        <div class="box uploading">
+          <div class="icon">
+            <i class="ph ph-fill ph-file"></i>
+          </div>
+          <div class="info">
+            <div class="filename">audio.mp3</div>
+            <div class="filesize">
+              <span>30MB /</span>
+              <span>70MB</span>
+            </div>
+            <div class="bar">
+              <progress value="45" max="100"></progress>
+              <span>45%</span>
+            </div>
+          </div>
+          <div class="action">
+            <i class="ph ph-x"></i>
+          </div>
+        </div>
+        <div class="box done"></div>
+        <div class="box error"></div>
+      </section>
+    </div>
+  </body>
+</html>
