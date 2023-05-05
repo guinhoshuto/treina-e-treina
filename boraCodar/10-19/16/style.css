@@ -10,6 +10,10 @@
     font-size: 62.5%
     }
 
+html, body{
+    overflow: hidden;
+}
+
 body {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
@@ -90,4 +94,84 @@ nav ul li{
 
 .input-wrapper input::placeholder{
     color: #E1E1E6;
+}
+
+.input-wrapper:focus-within{
+    outline: 2px solid white;
+}
+
+.letter{
+    background: var(--color);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: .8rem;
+    margin-right: 5.2rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.purple{
+    --color: #633BBC;
+}
+
+.green{
+    --color: #07847E;
+}
+
+.person img{
+    width: 4.8rem;
+    height: 4.8rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.person h3{
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.person p{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #8C8CBA;
+    margin-top: .4rem;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 5.2rem;
+
+    height: 75vh;
+    overflow-y: scroll;
+}
+
+
+.contacts::-webkit-scrollbar{
+    width: .8rem;
+}
+
+.contacts::-webkit-scrollbar-thumb{
+    background: #282843;
+    border-radius: 999px;
+}
+
+.list-wrapper ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+header nav,
+header form,
+.list-wrapper{
+    max-width: 35rem;
+    width: 100%;
+    margin-inline: auto;
 }
