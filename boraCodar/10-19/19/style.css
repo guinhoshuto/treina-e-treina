@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background: #121214;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.card{
+    flex-direction: column;
+    gap: 9.6rem;
+    padding: 2.4rem 5.6rem;
+    border-radius: 4rem;
+    background-color: white;
+    max-width: 79.5rem;
+}
+
+.card-body{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-drag{
+    background-color: #E5D8EA;
+    width: 16.8rem;
+    height: 1.8rem;
+    margin-inline: auto;
+    border-radius: 999px;
+}
+
+.driver-avatar{
+    width: 13.8rem;
+    height: 13.8rem;
+    border-radius: 999px;
+    object-fit: cover;
+}
+
+h1{
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    color: #372D38;
+}
+
+h1>span{
+    color: #864293;
+}
+
+.card-header p{
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: #372D38;
+}
+
+.driver-stars{
+    color: #F8F8FC;
+    background: #372D3B;
+    border-radius: 999px;
+    padding: .8rem 2.2rem;
+    gap: 1rem;
+    width: fit-content;
+    height: 3.2rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    align-items: center;
+    margin-top: -3.2rem;
+}
+
+.driver{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.card-body .left{
+    align-items: center;
+}
+
+.driver-name{
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #372D38;
+    margin-top: .6rem;
+}
+
+.car-img{
+    margin-left: -5rem;
+
+}
+
+.car-plate{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5rem;
+    color: #372D38;
+}
+
+.car-model{
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #372D38;
+}
+
+.card-footer{
+    gap: 3.2rem;
+    align-items: center;
+}
+
+.input-wrapper{
+    background: #F5EDF7;
+    border-radius: 2.4rem;
+    height: 6.4rem;
+    flex: 3;
+    align-items: center;
+    padding: 0 3.2rem;
+}
+
+.input-wrapper label{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border-width: 0;
+    white-space: nowrap;
+}
+
+.input-wrapper input{
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: #372d38;
+}
+
+.input-wrapper input::placeholder{
+    color: #372d38;
+}
+
+.input-wrapper input:focus{
+    outline: 0;
+}
+
+.input-wrapper:focus-within{
+    outline: .3rem solid black;
+}
+
+.card-footer .ph-fill{
+    font-size: 5.6rem;
+}
