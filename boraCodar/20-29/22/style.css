@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Heebo', sans-serif;
+    --font-primary: #38343D;
+    --font-red: #AA2222;
+}
+
+body{
+    background: linear-gradient(107.54deg, #935FD3 0%, #9245F1 100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 37.5rem;
+    height: 58.4rem;
+    padding: 2.4rem;
+    background: #FDFCFE;
+    border: 1px solid #F4EFFA;
+    box-shadow: 0px 52px 21px rgba(30, 30, 30, 0.01), 0px 29px 18px rgba(30, 30, 30, 0.05), 0px 13px 13px rgba(30, 30, 30, 0.09), 0px 3px 7px rgba(30, 30, 30, 0.1), 0px 0px 0px rgba(30, 30, 30, 0.1);
+    border-radius: 12px;
+}
+
+hr{
+    border: 1px solid #F4EFFA;
+    margin: 1.6rem 0;
+}
+
+.avatar{
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    margin-bottom: .8rem;
+}
+
+.avatar h3{
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #38343D;
+}
+
+.avatar span{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #686070;
+}
+
+label{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 4%;
+    color: #797085;
+    margin-top: 1.2rem;
+}
+
+.default{
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.default div{
+    display: flex;
+    align-items: center;
+    gap: .4rem
+}
+
+.default div p{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #38343D;
+}
+
+i{
+    font-size: 2rem;
+    color: #38343D;
+}
+
+.red i, .red div p{
+    color: var(--font-red);
+}
