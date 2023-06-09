@@ -24,7 +24,7 @@ body{
 
 .card{
     width: 37.5rem;
-    height: 58.4rem;
+    height: fit-content;
     padding: 2.4rem;
     background: #FDFCFE;
     border: 1px solid #F4EFFA;
@@ -76,7 +76,7 @@ label{
 .default div{
     display: flex;
     align-items: center;
-    gap: .4rem
+    gap: .8rem
 }
 
 .default div p{
