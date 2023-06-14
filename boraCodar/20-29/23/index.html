@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>#boraCodar 23</title>
+</head>
+<body>
+    <main>
+        <form action=""> 
+            <div class="step-progress">
+                <strong class="active done">Contato</strong><i class="ph-bold ph-caret-right"></i>
+                <strong class="active">Empresa</strong><i class="ph-bold ph-caret-right"></i>
+                <strong>Projeto</strong>
+
+            </div>
+            <div class="form-step active">
+                <div class="content">
+                    <div class="input-wrapper">
+                        <label for="name">Nome</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name"
+                            placeholder="como prefere ser chamado"
+                            required
+                        >
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="email">E-mail</label>
+                        <input 
+                            type="text" 
+                            id="email" 
+                            name="email"
+                            placeholder="digite seu email"
+                            required
+                        >
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="phone">Telefone</label>
+                        <input 
+                            type="text" 
+                            id="phone" 
+                            name="phone"
+                            placeholder="digite seu telefone"
+                            onkeypress="return /\d/.test(event.key)"
+                            required
+                        >
+                    </div>
+                </div>
+                <div class="buttons-wrapper justify-end">
+                    <button class="btn primary" data-action="next" type="button">Continuar</button>
+                </div>
+            </div>
+            <!-- PASSO 2 -->
+            <div class="form-step hide">
+                <div class="content">
+                    <div class="input-wrapper">
+                        <label for="empresa">Nome da empresa</label>
+                        <input 
+                            type="text" 
+                            id="empresa" 
+                            name="empresa"
+                            placeholder="Qual é o nome da empresa?"
+                            required
+                        >
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="funcionarios">Número de funcionários</label>
+                        <input 
+                            type="text" 
+                            id="funcionarios" 
+                            name="funcionarios"
+                            placeholder="Quantos funcionários tem usa empresa?"
+                            required
+                        >
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="desc">Sobre seu negócio</label>
+                        <textarea 
+                            type="text" 
+                            id="desc" 
+                            name="desc"
+                            placeholder="Fale sobre seu negócio"
+                            required
+                        ></textarea>
+                    </div>
+                </div>
+                <div class="buttons-wrapper justify-end">
+                    <button class="btn secondary" data-action="prev" type="button">Voltar</button>
+                    <button class="btn primary" data-action="next" type="submit">Continuar</button>
+                </div>
+            </div>
+            <!-- PASSO 3 -->
+            <div class="form-step hide">
+                <div class="content">
+                    <div class="input-wrapper">
+                        <label for="objetivo">Objetivos do projeto</label>
+                        <textarea 
+                            type="text" 
+                            id="objetivo" 
+                            name="objetivo"
+                            placeholder="Descreva quais objetivos deste projeto"
+                            required
+                        ></textarea>
+                    </div>
+                </div>
+                <div class="buttons-wrapper justify-end">
+                    <button class="btn secondary" data-action="prev" type="button">Voltar</button>
+                    <button class="btn primary" type="submit">Enviar resposta</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
