@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #242424;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+main{
+    width: 43rem;
+    height: 93.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5.2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    margin-top: 35rem;
+    margin-bottom: 10rem;
+    font-size: 3.2rem;
+    color: white;
+    line-height: 3.8rem;
+    text-align: center;
+}
+
+i {
+    font-size: 2.4rem;
+}
+
+main .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32rem;
+    gap: 8.2rem;
+}
+
+.brightness, .contrast, .hue{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.hue>div, .brightness>div, .contrast>div {
+    display: flex;
+    align-items: center;
+    height: .5rem;
+    border-radius: 12px;
+    background: white;
+}
+
+.hue>div{
+    background: linear-gradient(90deg, #F00 5.21%, #FF8A00 16.48%, #FFE600 27.74%, #14FF00 39.35%, #00A3FF 49.37%, #0500FF 61.18%, #AD00FF 72.26%, #FF00C7 83.53%, #F00 94.61%);
+}
+
+input[type="range"]{
+    width: 28rem;
+    height: .5rem;
+    appearance: none;
+    background: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 3px solid white;
+    border-radius: 50%;
+    background: #151515;
+    appearance: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+main .preview{
+    display: flex;
+    width: 84.6rem;
+    height: 84.6rem;
+    background: red;
+    border-radius: 50%;
+    box-shadow: 0px 0px 53px 13px red;
+    position: absolute;
+    top: -50rem;
+}
