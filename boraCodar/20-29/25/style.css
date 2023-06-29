@@ -25,11 +25,10 @@ body{
 #app {
     display: grid;
     gap: 2rem;
-    grid-template-columns: max-content max-content;
-    grid-template-rows: max-content max-content max-content;
     grid-template-areas: 'aside header'
                          'aside main'
                          'aside footer';
+    animation: appear 400ms 500ms backwards;
 }
 
 aside {
@@ -141,6 +140,20 @@ footer {
 
 }
 
+.adress-bar .adress {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    justify-content: center;
+}
+
+.adress-bar .adress ion-icon{
+    width: 1rem;
+    height: 1rem;
+    margin-top: -2px;
+}
+
 .adress-bar ion-icon:hover {
     background: rgba(255, 255, 255, 0.20);
     opacity: 1;
@@ -173,6 +186,8 @@ iframe{
 .interaction{
     display: flex;
     align-items: center;
+    align-self: center;
+    justify-self: center;
     gap: 1rem;
 }
 
@@ -191,4 +206,8 @@ iframe{
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.60);
     backdrop-filter: blur(2px);
+}
+
+@keyframes appear {
+    from{scale:2; opacity: 0}
 }
