@@ -85,6 +85,10 @@ i {
     margin-bottom: 2rem; 
 }
 
+ul, ol {
+    padding-left: 2rem;
+}
+
 .bottom li{
     font-size: 1.8rem;
     font-family: 'Source Sans 3', sans-serif;
