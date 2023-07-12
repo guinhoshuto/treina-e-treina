@@ -20,6 +20,5 @@ function setPortion(){
     portions.innerHTML = formatNumber(counter)
 } 
 
-
 setPortion();
 
