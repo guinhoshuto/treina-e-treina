@@ -16,5 +16,5 @@ export const downloader = (videoId) => new Promise((resolve, reject) => {
     }).on('error', () => {
         console.log('[ERROR] erro ao baixar o vídeo')
         reject()
-    }).pipe(fs.createWriteStream('audio.mp4'))
+    }).pipe(fs.createWriteStream('./audio.mp4'))
 }) 

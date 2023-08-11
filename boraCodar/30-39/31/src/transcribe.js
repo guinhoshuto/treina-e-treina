@@ -1,15 +1,15 @@
 import { pipeline } from "@xenova/transformers"
-import { loadingMessage } from "../../src/loading"
+import { loadingMessage } from "./loading"
 
 let data = null
 
-async function transcribeAudio(){
+export async function transcribeAudio(){
     const options = {
         chunk_length_s: 30,
         stride_length_s: 5,
         language: 'portuguese',
         task: 'transcribe',
-        return_timestamp: true
+        return_timestamps: true
     }
     try{
         console.time()
@@ -25,6 +25,7 @@ async function transcribeAudio(){
     } finally {
         console.timeEnd()
         console.log('[LOG] finalizou a transcrição')
+
         return data
     }
 } 
