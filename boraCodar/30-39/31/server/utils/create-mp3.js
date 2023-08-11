@@ -8,6 +8,12 @@ export const createMP3 = () => new Promise((resolve, reject) => {
         .input('audio.mp4')
         .outputOptions('-ab', '20k')
         .saveToFile('audio.mp3')
+        .on('start', () => {
+            console.log('[LOG] Início da conversão de áudio')
+        })
+        .on('progress', (progress) => {
+            console.log(`[CONVERTING] ${progress.percent}%`)
+        })
         .on('end', () => {
             console.log('[LOG] Áudio convertido')
             resolve()
