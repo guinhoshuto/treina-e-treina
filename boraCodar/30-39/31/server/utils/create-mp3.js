@@ -12,7 +12,8 @@ export const createMP3 = () => new Promise((resolve, reject) => {
             console.log('[LOG] Início da conversão de áudio')
         })
         .on('progress', (progress) => {
-            console.log(`[CONVERTING] ${progress.percent}%`)
+            console.log(progress)
+            console.log(`[CONVERTING] ${+progress.percent}%`)
         })
         .on('end', () => {
             console.log('[LOG] Áudio convertido')
