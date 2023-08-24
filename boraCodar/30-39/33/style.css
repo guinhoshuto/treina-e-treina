@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --purple-normal: #8860E6;
+    --purple-dark:#5B409B;
+    --gray-dark: #202024;
+    --gray-light: #F3F4FE;
+    --success: #04D361; 
+    --danger: #FF8F8F;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+}
