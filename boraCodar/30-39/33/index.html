@@ -7,9 +7,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
     <title>#boracodar 33</title>
 </head>
 <body>
-    
+    <main>
+        <div class="content">
+            <h1>Gere seu ticket e compartilhe com o mundo</h1>
+            <label for="username">Digite o nome do usuário</label>
+            <form action="">
+                <div class="input-wrapper">
+                    <i class="ph-fill ph-github-logo"></i>
+                    <input type="text" id="username" placeholder="Nome de usuário" autocomplete="off" autocapitalize="off">
+                </div>
+                <span class="error-message">Usuário inválido. Verifique e tente novamente.</span>
+                <button>GERAR MEU TICKET</button>
+            </form>
+        </div>
+        <div class="ticket">
+            <div class="ticket-container">
+                <img src="./assets/cover.png" alt="">
+                <div class="info">
+                    <div class="user-ticket-info">
+                        <img src="./assets/avatar.png" alt="">
+                        <span>TRIPULANTE</span>
+                        <h1 class="name">Seu nome aqui</h1>
+                    </div>
+                </div>
+                <div class="event-ticket-info">
+                    <span>EVENT</span>
+                    <span>IA PARA DEVS</span>
+                </div>
+                <div class="event-ticket-info">
+                    <span>DATA</span>
+                    <span>14 - 16 AGO. 2023</span>
+                </div>
+                <div class="event-ticket-info">
+                    <span>HORA</span>
+                    <span>AO VIVO - 19 H</span>
+                </div>
+                <div>
+                    <img src="./assets/lines.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

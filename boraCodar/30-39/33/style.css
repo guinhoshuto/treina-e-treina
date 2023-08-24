@@ -12,8 +12,98 @@
     --gray-dark: #202024;
     --gray-light: #F3F4FE;
     --success: #04D361; 
-    --danger: #FF8F8F;
+    --danger: #FF8F8F; 
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
     font-family: 'Space Grotesk', sans-serif;
 }
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: url('./assets/hero.png');
+    display: grid;
+    place-content: center;
+}
+
+main{
+    display: flex;
+}
+
+.content{
+    max-width: 49rem;
+}
+
+.content h1{
+    color: var(--gray-light);
+
+    background: var(--linear, linear-gradient(90deg, #DEE0FC 0%, #996DFF 51.04%, #BC9FFF 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 52px */
+    text-transform: uppercase;
+}
+
+.content label {
+    display: inline-block;
+
+    margin: 3.2rem 0;
+
+    color: var(--gray-light, #F3F4FE);
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+    text-transform: uppercase;
+}
+
+.input-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    width: 38.4rem;
+    height: 5.4rem;
+    background: var(--gray-light);
+    padding: 1.6rem 1.2rem;
+}
+
+.input-wrapper i{
+    font-size: 2.4rem;
+}
+
+.input-wrapper input{
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+input:focus-within{
+    outline: none;
+}
+
+.error-message{
+    display: inline-block;
+    color: var(--danger);
+}
+
+form button{
+    width: 38.4rem;
+
+    display: flex;
+    padding: 22px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+
+    color: white;
+    background: var(--purple-normal);
+}
+
+
