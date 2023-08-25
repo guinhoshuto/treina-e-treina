@@ -14,7 +14,6 @@
     --success: #04D361; 
     --danger: #FF8F8F; 
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
     font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -28,6 +27,7 @@ body{
 
 main{
     display: flex;
+    min-width: 120rem;
 }
 
 .content{
@@ -87,12 +87,34 @@ input:focus-within{
     outline: none;
 }
 
+.success-message i {
+    color: var(--success);
+}
+
+.success-message{
+    color: white;
+
+    /* Text-18 */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+}
+
 .error-message{
-    display: inline-block;
     color: var(--danger);
+
+    /* Text-18 */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
 }
 
 form button{
+    margin-top: 1.6rem;
     width: 38.4rem;
 
     display: flex;
@@ -104,6 +126,92 @@ form button{
 
     color: white;
     background: var(--purple-normal);
+
+    cursor: pointer;
 }
 
+.ticket{
+    padding:3.8rem;
+    width: 100%;
+    background: url('./assets/card.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    font-family: Roboto;
+
+    display: grid;
+    place-content: center;
+}
+
+.ticket-container{
+    display: flex;
+}
+
+.info{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.6rem;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-ticket-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+}
+
+.user-ticket-info span{
+    color: var(--purple-normal, #8860E6);
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 15px */
+    letter-spacing: 1.26px;
+    text-transform: uppercase;
+}
+
+.user-ticket-info h1{
+    color: var(--gray-dark, #202024);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 20px */
+}
+
+.avatar{
+    border-radius: 999px;
+    width: 12.8rem;
+    height: 12.8rem;
+    display: inline-block;
+}
+
+.strokes{
+    margin-top: 1rem;
+}
+
+.event-ticket-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    color: var(--gray-dark, #202024);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 160% */
+    letter-spacing: 1.05px;
+    text-transform: uppercase;
+}
+
+.hidden{
+    display: none;
+}

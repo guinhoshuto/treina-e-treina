@@ -21,8 +21,10 @@
                     <i class="ph-fill ph-github-logo"></i>
                     <input type="text" id="username" placeholder="Nome de usuário" autocomplete="off" autocapitalize="off">
                 </div>
-                <span class="error-message">Usuário inválido. Verifique e tente novamente.</span>
+                <span class="error-message hidden">Usuário inválido. Verifique e tente novamente.</span>
+                <span class="success-message hidden"><i class="ph ph-check-circle"></i>TICKET GERADO COM SUCESSO</span>
                 <button>GERAR MEU TICKET</button>
+                <button class="download hidden">DOWNLOAD</button>
             </form>
         </div>
         <div class="ticket">
@@ -30,28 +32,31 @@
                 <img src="./assets/cover.png" alt="">
                 <div class="info">
                     <div class="user-ticket-info">
-                        <img src="./assets/avatar.png" alt="">
+                        <img class="avatar" src="./assets/avatar.png" alt="">
                         <span>TRIPULANTE</span>
                         <h1 class="name">Seu nome aqui</h1>
                     </div>
-                </div>
-                <div class="event-ticket-info">
-                    <span>EVENT</span>
-                    <span>IA PARA DEVS</span>
-                </div>
-                <div class="event-ticket-info">
-                    <span>DATA</span>
-                    <span>14 - 16 AGO. 2023</span>
-                </div>
-                <div class="event-ticket-info">
-                    <span>HORA</span>
-                    <span>AO VIVO - 19 H</span>
-                </div>
-                <div>
-                    <img src="./assets/lines.png" alt="">
+                    <div>
+                        <div class="event-ticket-info">
+                            <span>EVENT</span>
+                            <span>IA PARA DEVS</span>
+                        </div>
+                        <div class="event-ticket-info">
+                            <span>DATA</span>
+                            <span>14 - 16 AGO. 2023</span>
+                        </div>
+                        <div class="event-ticket-info">
+                            <span>HORA</span>
+                            <span>AO VIVO - 19 H</span>
+                        </div>
+                        <div class="strokes">
+                            <img src="./assets/lines.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
