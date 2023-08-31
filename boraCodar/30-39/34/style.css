@@ -101,9 +101,11 @@ body{
     border-radius: .375rem;
     border: 1px solid #252529;
     background: #17171A;
+    display: none;
 }
 
 .option{
+    position: relative;
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -112,7 +114,7 @@ body{
     border-bottom: 1px solid #252529;
 }
 
-.option label{
+.option .label{
     color: #F8F9FE;
 }
 
@@ -143,4 +145,29 @@ body{
 
 .option:has(input:checked) [data-lucide="check"]{
     display: block;
+}
+
+.option input[type="radio"]{
+    all: unset;
+    position: absolute;
+    inset:0;
+    cursor: pointer;
+}
+
+.option:nth-child(1){ color: var(--yellow)}
+.option:nth-child(2){ color: var(--green)}
+.option:nth-child(3){ color: var(--pink)}
+.option:nth-child(4){ color: var(--orange)}
+.option:nth-child(5){ color: var(--blue)}
+
+#category-select:has(#options-view-button:checked) + #options{
+    display: block;
+}
+
+.select:has(.option input:checked) #category-select label{
+    color: #A881E6;
+}
+
+.select:has(.option input:checked) #category-select{
+    color: #FBF9FE;
 }
